@@ -59,7 +59,7 @@ class Svpng_rb
 			for x in 0...((@pitch-1)/(alpha ? 4 : 3))
 				#rgb_info=rgb_data[y*x]#从rgb_data中获取单个像素值
 				for i in 0...(alpha ? 4 : 3)
-					u8adler(rgb_data[y*x][i])
+					u8adler(rgb_data[y][x][i])
 				end
 			end
 		end
